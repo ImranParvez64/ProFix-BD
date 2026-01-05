@@ -6,12 +6,12 @@ import {
 } from 'lucide-react';
 
 const navItems = [
-  { name: 'Home', icon: <Home size={18} />, href: '#' },
-  { name: 'About Us', icon: <User size={18} />, href: '#' },
-  { name: 'Services', icon: <Settings size={18} />, href: '#' },
-  { name: 'Gallery', icon: <ImageIcon size={18} />, href: '#' },
-  { name: 'Testimonials', icon: <MessageSquare size={18} />, href: '#' },
-  { name: 'Contact', icon: <Phone size={18} />, href: '#' },
+  { name: 'Home', icon: <Home size={18} />, href: '#home' },
+  { name: 'About Us', icon: <User size={18} />, href: '#about' },
+  { name: 'Services', icon: <Settings size={18} />, href: '#service' },
+  { name: 'Gallery', icon: <ImageIcon size={18} />, href: '#gallery' },
+  { name: 'Testimonials', icon: <MessageSquare size={18} />, href: '#testimonials' },
+  { name: 'Contact', icon: <Phone size={18} />, href: '#contact' },
 ];
 
 const Sidebar = () => {
