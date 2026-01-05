@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins, Inter } from "next/font/google";
 import "./globals.css";
+import Sidebar from "./Sidebar/Sidebar";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -26,7 +27,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${poppins.variable} ${inter.variable} antialiased`}>
-        {children}
+        <Sidebar />
+
+        {/* কন্টেন্ট এরিয়া: ডেক্সটপে সাইডবারের সমান মার্জিন হবে (ml-[220px]) */}
+        <main className="flex-1 lg:ml-[220px] pt-[72px] lg:pt-0 min-h-screen">
+          <div className="p-4 md:p-8">{children}</div>
+        </main>
       </body>
     </html>
   );
