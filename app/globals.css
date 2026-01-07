@@ -6,23 +6,37 @@
 }
 
 @theme inline {
+  --color-primary: var(--primary);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-poppins: var(--font-poppins);
   --font-inter: var(--font-inter);
+  --color-secondary: var(--secondary);
 }
 
 :root {
-
+  --primary: #1e3a8a;
+  --secondary: #38bdf8;
+  --background: #f8fafc;
+  --text-primary: #0f172a;
 }
 
 body {
-
+  background-color: var(--background);
 }
 
-h1,h2,h3,h4,h5,h6{
-  font-family: "Poppins", sans-serif; 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
 }
-p{
+p {
   font-family: "Inter", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
